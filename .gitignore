@@ -1,0 +1,71 @@
+# macOS Maintenance Scripts - .gitignore
+
+# Sensitive System Information
+**/System_Cleaning_Backups/
+**/App_Residue_Backups/
+**/Quick_Cleanup_Backups/
+**/Temp_Backup_*/
+**/Startup_Items_Backup/
+
+# Log Files (contain personal system information)
+**/Maintenance_Logs/
+*.log
+
+# Performance Reports (may contain personal data)
+**/Performance_Reports/
+Performance_Report_*.md
+
+# Temporary Files
+**/.DS_Store
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+
+# Personal Configuration Files
+com.iEzzat.*.plist
+**/*_personal_*
+
+# Cache and Temporary Directories
+**/cache/
+**/tmp/
+**/temp/
+
+# Backup Files
+*.backup
+*.bak
+*~
+
+# System-specific files that shouldn't be shared
+**/serial_numbers.txt
+**/system_info.txt
+**/hardware_report.txt
+
+# Files with personal paths or usernames
+**/*iEzzat*
+**/Users/*/
+
+# Runtime files
+*.pid
+*.lock
+
+# Compressed backup files
+*.tar.gz
+*.zip
+*.dmg
+
+# Files that may contain sensitive information
+**/error_reports/
+**/crash_logs/
+**/diagnostic_reports/
+
+# Keep these files but ignore personal content
+!README.md
+!LICENSE
+!*.sh
+!*.md
+!sample_config.plist
+
+# However, ignore any personal modifications to config files
+*_personal.sh
+*_custom.sh
+my_*.sh
